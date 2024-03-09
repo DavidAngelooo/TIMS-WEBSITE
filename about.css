@@ -1,0 +1,102 @@
+/*============ Brief History ============*/
+ 
+.about__history {
+    margin-top: 3rem ;
+}
+ 
+.about__history-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    margin-bottom: -8rem ;
+}
+ 
+.about__history-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+ 
+.history__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+ 
+.history__card {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+ 
+.history__card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+ 
+.history__icon {
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+ 
+.history__card:nth-child(2) .history__icon {
+    background: var(--color-success);
+}
+ 
+.history__card:nth-child(3) .history__icon {
+    background: var(--color-primary);
+}
+ 
+.more__history-container{
+    margin-bottom: -10rem;
+ 
+}
+ 
+/*========= VISION MISSION ========*/
+ 
+.testimonials__container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+   
+}
+ 
+.testimonial {
+    padding-top: 2rem;
+}
+ 
+.testimonial__info {
+    text-align: center;
+}
+ 
+.testimonial__body{
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    text-align: center;
+}
+ 
+.testimonial__body::before{
+    content: "";
+    display: block;
+    background: var(--color-bg1)(
+        var(--color-primary),
+        var(--color-primary),
+        var(--color-primary)
+    );
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+ 
+ 
+ 
+

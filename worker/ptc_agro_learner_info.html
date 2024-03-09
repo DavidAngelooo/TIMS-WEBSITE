@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charst="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data table</title>
+    <link rel="shortcut icon" href="./images/bootstrap-icon-png-11.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+
+    <title>TESDA INFORMATION MANAGEMENT SYSTEM</title>
+ 
+    <!--ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+ 
+    <!--GOOGLE FONTS (MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="info_course.css">
+    
+
+    <style>
+        .courses {
+            margin-top: 1rem;   
+        }
+    </style>
+</head>
+<body>
+    <p id="course" hidden>ptc_agro</p>
+
+    <nav>
+        <div class="container nav__container">
+            <a href="worker_home.html"><h4>TESDA</h4></a>
+            <ul class="nav__menu">
+                <li><a href="worker_home.html">Home</a></li>
+                <li><a href="worker_about.html">About</a></li>
+                <li><a href="worker_programsservices.html">Programs And Services</a></li>
+                <li><a href="worker_contact.html">Contact</a></li>
+                <li><a href="worker_newsevents.html">News And Events</a></li>
+                <li><a href="worker_viewprofile.html">View Profile</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!---============ END OF NAVBAR =============-->
+
+
+    <div class="container py-5">
+        <br></br>
+        <br></br>
+        <h2>Currently Taking the Course</h2>
+        <br></br>
+        <div class="row">
+        <table id="example3" class="table table-striped table-bordered" style="width:100%" bgcolor="#fff">
+        </table>
+        </div>
+        </div>
+    </div>
+    
+    <div class="container py-5">
+        <h2>Already Graduated</h2>
+        <br></br>
+        <div class="row">
+        <table id="graduated" class="table table-striped table-bordered" style="width:100%" bgcolor="#fff">
+        </table>
+        </div>
+        </div>
+    </div>
+    
+    <div class="container py-5">
+        <h2>Newly Registered</h2>
+        <br></br>
+        <div class="row">
+        <table id="new" class="table table-striped table-bordered" style="width:100%" bgcolor="#fff">
+        </table>
+        </div>
+        </div>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.0/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script src="./table.js"></script>
+   
+</body>
+</html>
+ 
+ 

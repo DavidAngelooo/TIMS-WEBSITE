@@ -1,0 +1,425 @@
+@import  url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global Tags */
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35,35,35);
+}
+
+span{
+    font-size: .0rem;
+    color: #757373
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24,24,49);
+}
+
+
+/* Navigation */
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+
+nav .navigation ul li a:hover{
+    color: #FDC93B;
+}
+
+
+/* registration */
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-color: rgb(99, 112, 168, 0.5);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#registration .reminder {
+    color: #fff;
+}
+
+#registration .reminder h1 {
+    color: #fff;
+}
+
+#registration .reminder .time {
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .reminder .time .date {
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}    
+
+#registration .form {
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 500px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(34, 29, 29, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 25px;
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    border-radius: 5px;
+    outline: none;
+}
+
+#registration .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form .btn{ 
+    margin-top: 20px;
+}
+
+#registration .form a.yellow {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: #FDC93B;
+    transition: 0.3s ease;
+}
+
+#registration .form a.yellow:hover {
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+ 
+   
+:root{
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff7;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #646cc0;
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+ 
+    --transition: all 400ms ease;
+}
+ 
+body{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    background: var(--color-bg);
+}
+
+ 
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+ 
+.btn:hover{
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+ 
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+ 
+/*=============== NAVBAR ===========*/
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+ 
+/* change navbar styles on scroll using javascript */
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+ 
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+nav button {
+    display: none;
+}
+ 
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+ 
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+ 
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+ 
+ 
+/*============MEDIA QUERIES (TABLETS) =============*/
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+ 
+    h1{
+        font-size: 2.2rem;
+    }
+ 
+    h2{
+        font-size: 1.7rem;
+    }
+ 
+    h3{
+        font-size: 1.4rem;
+    }
+ 
+    h4{
+        font-size: 1.2rem;
+    }
+ 
+    /*===================NAV BAR======================*/
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+ 
+    nav button#close-menu-btn{
+        display: none;
+    }
+ 
+    .nav__menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;    
+        display: none;
+    }
+ 
+    .nav__menu li {
+        width: 100%;
+        height: 5.8rem;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+ 
+    .nav__menu li:nth-child(2){
+        animation-delay: 200ms;
+    }
+ 
+    .nav__menu li:nth-child(3){
+        animation-delay: 400ms;
+    }
+ 
+    .nav__menu li:nth-child(4){
+        animation-delay: 600ms;
+    }
+ 
+    @keyframes animateNavItems {
+        0% {
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+       
+        100% {
+            transform: rotateZ(0) rotateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+   
+ 
+    .nav__menu li a {
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+ 
+    .nav__menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+ 
+    /*=================== HEADER ======================*/
+    .header {
+        height: 52vh;
+        padding-bottom: 3rem;
+    }
+ 
+    .header__container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    }
+
+ /*=================== MEDIA QUERIES (PHONES) ===============*/    
+ 
+ @media screen and (max-width: 600px){
+     .container{
+         width: var(--container-width-sm);
+     }
+    }
+ 
+ 
+ 
+
+
+#header
+{
+    background: #00a2d1;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 36px;
+    border-radius: 25px;
+}
+
+.form-style{
+    font-family: 'Open Sans Condensed' arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #cfcaca;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(34, 29, 29, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 25px;
+}
+
+.btn{
+    padding:10px;
+    font-size: 15px;
+    color: #fff;
+    background: #FDC93B;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+

@@ -1,0 +1,79 @@
+
+
+/*=========ptc health care===========*/ 
+
+
+
+#course-inner .overview{
+    width: 70%;
+}
+
+#course-inner .overview .course-img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#course-inner .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#course-inner .overview .course-head .c-name{
+    width: 70%;
+}
+
+#course-inner .overview .course-head .c-name h2{
+    color: #29303B;
+}
+
+#course-inner .overview .course-head .c-name span{
+    font-size: 15px;
+}
+
+#course-inner .overview .course-head p{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #5838fc;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgba(88,56,252,0.1);
+}
+
+#course-inner .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+#course-inner .learn p i{
+    color: #654ce4;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+#course-inner .tutor {
+    display: flex;
+
+}
+
+#course-inner .tutor img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+#course-inner .tutor h5{
+    font-size: 15px;
+}
+
+#course-inner .enroll {
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 40px rgb(11 2 55 / 8%);
+}
